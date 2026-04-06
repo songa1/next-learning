@@ -1,0 +1,11 @@
+{
+  "posts": [
+    {
+      "id": "0Y-mjRsgCzU",
+      "title": "Beyond the Horizon: The Rise of Sustainable Urban Gardening",
+      "desc": "This article examines how vertical farming and hydroponics are turning concrete jungles into self-sustaining food sources.",
+      "content": "<p>In the heart of bustling metropolises, a quiet revolution is taking root. Towering skyscrapers, once symbols of industrial might, are now being reimagined as vertical farms, challenging the traditional notion that agriculture belongs to the countryside. This shift is driven by the urgent need for sustainable food systems in the face of climate change and rapid urbanization.</p><p>Vertical farming, utilizing hydroponic and aeroponic systems, allows crops to be grown indoors in stacked layers. This method drastically reduces water consumption—by up to 95% compared to conventional farming—and eliminates the need for pesticides, as the controlled environment keeps pests at bay. Furthermore, by locating farms within cities, we can slash transportation costs and carbon emissions, delivering fresh produce to consumers within hours of harvest.</p><p>While the initial setup costs remain a barrier for some, the long-term benefits are undeniable. As technology advances and energy efficiency improves, vertical farming is poised to become a cornerstone of future food security, ensuring that even the most densely populated cities can feed themselves sustainably.</p>"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

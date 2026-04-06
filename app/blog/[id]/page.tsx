@@ -1,8 +1,7 @@
+import { BlogDetails } from "@/components/BlogDetails";
 
-
-export default async function BlogDetails({ params }) {
+export default async function BlogDetail({ params }) {
   const { id } = await params;
 
-  return <h1>Blog Details for {id}</h1>;
+  return <BlogDetails id={id} />;
 }
- 

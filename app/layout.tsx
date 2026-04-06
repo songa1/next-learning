@@ -1,15 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
+import { Ubuntu } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const ubuntu = Ubuntu({
+  weight: "400",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-ubuntu",
 });
 
 export const metadata: Metadata = {
@@ -23,11 +20,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className={`${ubuntu.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col prose lg:prose-xl max-w-none">
+        <nav className="container flex items-center justify-between mx-auto">
+          <h2>ReadBlog</h2>
+          <ul className="flex gap-2 items-center">
+            <Link href="/">Articles</Link>
+            <Link href="/create">Create Article</Link>
+          </ul>
+        </nav>
+        {children}
+      </body>
     </html>
   );
 }
