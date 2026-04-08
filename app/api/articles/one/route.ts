@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-export const GET = async (req) => {
+export const GET = async (req: any) => {
   try {
     const res = await fetch(
       `${process.env.JSON_SERVER_API}/posts/${req.headers.get("id")}`,

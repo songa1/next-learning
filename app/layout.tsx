@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
 import { Ubuntu } from "next/font/google";
+import { AuthProvider } from "@/lib/authContext";
+import { Navbar } from "@/components/Navbar";
 
 const ubuntu = Ubuntu({
   weight: "400",
@@ -21,16 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${ubuntu.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col prose lg:prose-xl max-w-none">
-        <nav className="container flex items-center justify-between mx-auto">
-          <h2>ReadBlog</h2>
-          <ul className="flex gap-2 items-center">
-            <Link href="/">Articles</Link>
-            <Link href="/create">Create Article</Link>
-          </ul>
-        </nav>
-        {children}
-      </body>
+      <AuthProvider>
+        <body className="min-h-full flex flex-col prose lg:prose-xl max-w-none">
+          <Navbar />
+          {children}
+        </body>
+      </AuthProvider>
     </html>
   );
 }

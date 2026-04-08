@@ -7,5 +7,23 @@
       "content": "<p>In the heart of bustling metropolises, a quiet revolution is taking root. Towering skyscrapers, once symbols of industrial might, are now being reimagined as vertical farms, challenging the traditional notion that agriculture belongs to the countryside. This shift is driven by the urgent need for sustainable food systems in the face of climate change and rapid urbanization.</p><p>Vertical farming, utilizing hydroponic and aeroponic systems, allows crops to be grown indoors in stacked layers. This method drastically reduces water consumption—by up to 95% compared to conventional farming—and eliminates the need for pesticides, as the controlled environment keeps pests at bay. Furthermore, by locating farms within cities, we can slash transportation costs and carbon emissions, delivering fresh produce to consumers within hours of harvest.</p><p>While the initial setup costs remain a barrier for some, the long-term benefits are undeniable. As technology advances and energy efficiency improves, vertical farming is poised to become a cornerstone of future food security, ensuring that even the most densely populated cities can feed themselves sustainably.</p>"
     }
   ],
+  "users": [
+    {
+      "id": "bYSEkSWFz0M",
+      "name": "Cishahayo Songa Achille",
+      "email": "songachillethe1her@gmail.com",
+      "bio": "Some bio",
+      "password": "$2b$12$9XAUeIXGpcWfE0jMzgs/n.v3QoEK7nvOg3h1HKo4OgUKBb2A4r1s2",
+      "role": "student"
+    },
+    {
+      "id": "QSE9tqxvbPE",
+      "name": "Achille Songa Cishahayo",
+      "email": "songachillethe1her1@gmail.com",
+      "bio": "BBBBB",
+      "password": "$2b$12$CUk4u7BTk3Lb/dBjQg5y/urNw20tyxRx8D84FMw3MTOCSrc3lxcDu",
+      "role": "student"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

@@ -2,8 +2,12 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-form input {
+form input, textarea {
   flex: 1 !important;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
 }
 
 body {

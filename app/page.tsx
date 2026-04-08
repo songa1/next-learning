@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 export default function HomePage() {
   const router = useRouter();
-  const [articles, setArticles] = useState([]);
+  const [articles, setArticles] = useState<any[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -39,7 +39,7 @@ export default function HomePage() {
                 <p>{item?.desc}</p>
                 <button
                   onClick={() => router.push(`/blog/${item?.id}`)}
-                  className="bg-red-500 p-3 rounded-lg text-white"
+                  className="bg-red-500 p-3 rounded-lg text-white mr-2"
                 >
                   Read more
                 </button>

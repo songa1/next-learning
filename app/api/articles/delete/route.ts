@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-export const DELETE = async (req) => {
+export const DELETE = async (req: any) => {
   try {
     const res = await fetch(
       `${process.env.JSON_SERVER_API}/posts/${req.headers.get("id")}`,

@@ -2,13 +2,17 @@
 
 import { useState } from "react";
 import Tiptap from "./Tiptap";
+import useAuth from "@/lib/authContext";
 
 export const Create = () => {
+  const { user, authenticated } = useAuth();
   const [title, setTitlte] = useState("");
   const [desc, setDesc] = useState("");
   const [content, setContent] = useState("");
 
-  const handleSubmit = async (e) => {
+  console.log(user, authenticated)
+
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     console.log("Title: ", title, "Description: ", desc);
 
@@ -21,6 +25,7 @@ export const Create = () => {
         title,
         desc,
         content,
+        createdBy: user?.userId,
       }),
     });
 
