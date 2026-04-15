@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /private/
+ 
+Sitemap: https://learning-nextjs-from-beginner-to-advanced.vercel.app/sitemap.xml
